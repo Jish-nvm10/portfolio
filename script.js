@@ -6,14 +6,19 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   
   // Navbar hide on scroll down, show on scroll up
   let prevScrollPos = window.scrollY;
-  const navbar = document.getElementById("navbar");
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+    // scrolling up
+    navbar.style.transform = "translateY(0)";
+  } else {
+    // scrolling down
+    navbar.style.transform = "translateY(-100%)";
+  }
+
+  prevScrollPos = currentScrollPos;
+});
   
-  window.addEventListener("scroll", () => {
-    const currentScrollPos = window.scrollY;
-    if (prevScrollPos > currentScrollPos) {
-      navbar.style.top = "0";
-    } else {
-      navbar.style.top = "-80px";
-    }
-    prevScrollPos = currentScrollPos;
-  });
