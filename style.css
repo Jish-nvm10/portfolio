@@ -16,12 +16,15 @@
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 1rem 2rem;
-    position: sticky;
+    position: fixed; /* changed from sticky */
+    width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: top 0.4s ease-in-out;
   }
   
   .logo {
