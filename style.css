@@ -27,6 +27,9 @@
     align-items: center;
     transition: transform 0.3s ease-in-out;
   }
+  #home {
+    padding-top: 100px; 
+  }
   
   .logo {
     font-family: 'Dancing Script', cursive;
@@ -62,7 +65,7 @@
   }
   
   .section {
-    padding: 3rem 2rem;
+    padding: 1.5rem 2rem;
     max-width: 1000px;
     margin: auto;
     animation: fadeIn 1s ease-in;
