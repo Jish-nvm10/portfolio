@@ -177,6 +177,10 @@ footer {
     align-items: center;
     text-align: center;
   }
+ 
+    #home {
+      padding-top: 180px; 
+    }
 
   .navbar-phrase {
     font-size: 1rem;
