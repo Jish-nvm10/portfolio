@@ -30,7 +30,10 @@ header {
 #home {
   padding-top: 100px;
 }
-
+#home h2 {
+  position: relative;
+  top: 18px; 
+}
 .navbar-center {
   text-align: center;
   width: 100%;
@@ -151,8 +154,8 @@ footer {
   height: 180px;
   border-radius: 50%;
   background-image: url('assets/profile copy.jpg');
-  background-size: 160%;        /* 👈 This zooms in the photo inside the circle */
-  background-position: center 35%; /* 👈 Adjust this to shift it up/down */
+  background-size: 160%;       
+  background-position: center 35%; 
   background-repeat: no-repeat;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border: 4px solid #fff;
@@ -179,7 +182,11 @@ footer {
   }
  
     #home {
-      padding-top: 220px; 
+      padding-top: 150px; 
+    }
+    #home h2 {
+      position: relative;
+      top: 18px; 
     }
 
   .navbar-phrase {
@@ -229,14 +236,14 @@ footer {
     padding: 1rem;
   }
 
-/* Hamburger icon styles - retained in case needed later */
+
 .hamburger {
   display: none;
   font-size: 2rem;
   cursor: pointer;
 }
 
-/* Hide nav menu on mobile by default */
+
 #nav-menu {
   display: flex;
   gap: 1.5rem;
